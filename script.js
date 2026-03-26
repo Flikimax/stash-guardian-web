@@ -2,27 +2,27 @@ const builds = [
   {
     os: "macos",
     label: "macOS (Apple Silicon)",
-    version: "0.5.0.0",
+    version: "0.5.0",
     status: "beta",
-    size: "119.9 MB",
+    size: "143.3 MB",
     checksum: "8be2...9e13",
-    downloadUrl: "#",
+    downloadUrl: "dist/0.5.0/Stash%20Guardian-0.5.0-arm64.dmg",
     notesUrl: "#"
   },
   {
     os: "windows",
     label: "Windows 10+",
-    version: "0.5.0.0",
+    version: "0.5.0",
     status: "beta",
-    size: "104 MB",
+    size: "119.9 MB",
     checksum: "f74a...12d8",
-    downloadUrl: "#",
+    downloadUrl: "dist/0.5.0/Stash%20Guardian-0.5.0-setup.exe",
     notesUrl: "#"
   },
 //   {
 //     os: "linux",
 //     label: "Linux (AppImage)",
-//     version: "0.5.0.0",
+//     version: "0.5.0",
 //     status: "stable",
 //     size: "96 MB",
 //     checksum: "31ca...45ff",
@@ -48,7 +48,7 @@ function renderBuilds(osFilter) {
         </div>
         <p class="build-meta">Versión: ${build.version} · Tamaño: ${build.size}</p>
         <div class="build-actions">
-        <a class="btn-link primary" href="${build.downloadUrl}" aria-label="Descargar build para ${build.label}">Descargar</a>
+        <a class="btn-link primary" href="${build.downloadUrl}" download aria-label="Descargar build para ${build.label}">Descargar</a>
         </div>
         </article>
     `

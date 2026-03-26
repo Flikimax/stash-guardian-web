@@ -1,14 +1,59 @@
 :root {
-  --ink-950: #0d1618;
-  --ink-900: #132125;
-  --ink-800: #1b2f34;
-  --mint-500: #27c6a8;
-  --mint-400: #47dcbc;
-  --amber-400: #f6b84d;
-  --cream-100: #f7f8f3;
-  --slate-300: #abc0c4;
-  --danger-400: #de6b57;
-  --shadow: 0 10px 30px rgba(6, 19, 22, 0.28);
+  /* THEME A (activo): Git Graphite Orange */
+  --ink-950: #0d1117;
+  --ink-900: #161b22;
+  --ink-800: #21262d;
+  --mint-500: #e85d04;
+  --mint-400: #ff8f3d;
+  --amber-400: #ffb86b;
+  --cream-100: #f0f6fc;
+  --slate-300: #b8bec8;
+  --danger-400: #f85149;
+  --accent-rgb: 255, 143, 61;
+  --signal-rgb: 255, 184, 107;
+  --shadow: 0 10px 30px rgba(1, 4, 9, 0.36);
+
+  /* THEME B: Git Blue */
+  /* --ink-950: #0b1220; */
+  /* --ink-900: #0f1b2d; */
+  /* --ink-800: #172840; */
+  /* --mint-500: #0969da; */
+  /* --mint-400: #218bff; */
+  /* --amber-400: #f0883e; */
+  /* --cream-100: #f0f6fc; */
+  /* --slate-300: #9db3cc; */
+  /* --danger-400: #ff7b72; */
+  /* --accent-rgb: 33, 139, 255; */
+  /* --signal-rgb: 240, 136, 62; */
+  /* --shadow: 0 10px 30px rgba(2, 12, 28, 0.42); */
+
+  /* THEME C: Git Terminal */
+  /* --ink-950: #0f1411; */
+  /* --ink-900: #16201a; */
+  /* --ink-800: #223128; */
+  /* --mint-500: #2ea043; */
+  /* --mint-400: #56d364; */
+  /* --amber-400: #e3b341; */
+  /* --cream-100: #f5f8f5; */
+  /* --slate-300: #b2c3b5; */
+  /* --danger-400: #ff6a69; */
+  /* --accent-rgb: 86, 211, 100; */
+  /* --signal-rgb: 227, 179, 65; */
+  /* --shadow: 0 10px 30px rgba(7, 14, 9, 0.4); */
+
+  /* THEME D: Git Warm Contrast */
+  /* --ink-950: #17110f; */
+  /* --ink-900: #241916; */
+  /* --ink-800: #33231f; */
+  /* --mint-500: #e5532d; */
+  /* --mint-400: #ff7b4b; */
+  /* --amber-400: #ffd38d; */
+  /* --cream-100: #fff6eb; */
+  /* --slate-300: #d6b9a4; */
+  /* --danger-400: #ff5f56; */
+  /* --accent-rgb: 255, 123, 75; */
+  /* --signal-rgb: 255, 211, 141; */
+  /* --shadow: 0 10px 30px rgba(21, 10, 8, 0.38); */
 }
 
 * {
@@ -25,8 +70,8 @@ body {
   font-family: "Space Grotesk", sans-serif;
   color: var(--cream-100);
   background:
-    radial-gradient(circle at 10% 10%, rgba(246, 184, 77, 0.12), transparent 45%),
-    radial-gradient(circle at 85% 20%, rgba(39, 198, 168, 0.2), transparent 40%),
+    radial-gradient(circle at 10% 10%, rgba(var(--signal-rgb), 0.12), transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(var(--accent-rgb), 0.2), transparent 40%),
     linear-gradient(160deg, var(--ink-950), var(--ink-900) 45%, #0a1215 100%);
   min-height: 100vh;
   line-height: 1.5;
@@ -38,8 +83,8 @@ body {
   pointer-events: none;
   opacity: 0.22;
   background:
-    radial-gradient(circle at 25% 35%, rgba(39, 198, 168, 0.45), transparent 35%),
-    radial-gradient(circle at 70% 55%, rgba(246, 184, 77, 0.5), transparent 40%);
+    radial-gradient(circle at 25% 35%, rgba(var(--accent-rgb), 0.45), transparent 35%),
+    radial-gradient(circle at 70% 55%, rgba(var(--signal-rgb), 0.5), transparent 40%);
   filter: blur(60px);
   animation: drift 15s ease-in-out infinite alternate;
   z-index: 0;
