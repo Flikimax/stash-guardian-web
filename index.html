@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stash Guardian genera respaldos restaurables para recuperar tu trabajo cuando se pierde información en Git."
+    />
+    <title>Stash Guardian | Respaldo de Proyectos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark">
+            <img src="img/logo.png" alt="Logo de Stash Guardian" />
+          </span>
+          <span class="brand-text">Stash Guardian</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#features">Producto</a></li>
+          <li><a href="#downloads">Builds</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+
+        <a class="btn btn-nav" href="#downloads">Descargar</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container reveal" id="inicio">
+        <p class="eyebrow">Respaldo y recuperación para entornos Git</p>
+        <h1>Si se pierde información en Git, <span>tu proyecto no se pierde.</span></h1>
+        <p class="hero-copy">
+          Stash Guardian crea respaldos del estado de tu proyecto para que puedas restaurarlo
+          rápidamente cuando haya pérdida de información, conflictos críticos o cambios irreversibles en Git.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#downloads">Descargar builds</a>
+          <a class="btn btn-secondary" href="#features">Ver capacidades</a>
+        </div>
+
+        <div class="hero-metrics" role="list" aria-label="Métricas clave">
+          <article role="listitem">
+            <h2>Respaldo automático</h2>
+            <p>Crea puntos de recuperación antes de cambios críticos en Git.</p>
+          </article>
+          <article role="listitem">
+            <h2>Restauración segura</h2>
+            <p>Recupera estados estables del proyecto cuando se pierde información.</p>
+          </article>
+          <article role="listitem">
+            <h2>2 plataformas</h2>
+            <p>Aplicación disponible para macOS y Windows</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="features container reveal" id="features">
+        <div class="section-head">
+          <p class="eyebrow">Qué resuelve Stash Guardian</p>
+          <h2>Respaldo confiable cuando Git no alcanza</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Respaldos restaurables</h3>
+            <p>Genera respaldos frecuentes del proyecto para volver a un estado seguro cuando se pierde información en Git.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Recuperación guiada</h3>
+            <p>Selecciona el respaldo correcto y restaura en segundos sin reconstruir manualmente cambios perdidos.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Historial de puntos seguros</h3>
+            <p>Mantén un historial claro de estados del proyecto para volver atrás con confianza ante errores críticos.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Continuidad del equipo</h3>
+            <p>Reduce tiempos de inactividad al recuperar rápidamente el trabajo y mantener el flujo de desarrollo activo.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="downloads container reveal" id="downloads">
+        <div class="section-head">
+          <p class="eyebrow">Descargas</p>
+          <h2>Builds oficiales de Stash Guardian</h2>
+          <p>Instala la app en tu sistema operativo y habilita respaldos restaurables para tus repositorios Git.</p>
+        </div>
+
+        <div class="os-tabs" role="tablist" aria-label="Seleccionar sistema operativo">
+          <button class="os-tab active" data-os="all" role="tab" aria-selected="true">Todos</button>
+          <button class="os-tab" data-os="macos" role="tab" aria-selected="false">macOS</button>
+          <button class="os-tab" data-os="windows" role="tab" aria-selected="false">Windows</button>
+          <!-- <button class="os-tab" data-os="linux" role="tab" aria-selected="false">Linux</button> -->
+        </div>
+
+        <div class="download-grid" id="buildGrid" aria-live="polite"></div>
+
+        <!-- <p class="build-note">
+          ¿Necesitas una versión anterior? Revisa el historial de releases para mantener compatibilidad con tu entorno de desarrollo.
+        </p> -->
+      </section>
+
+      <section class="roadmap container reveal" id="roadmap">
+        <div class="section-head">
+          <p class="eyebrow">Roadmap</p>
+          <h2>Próximas mejoras de respaldo y restauración</h2>
+        </div>
+
+        <ol class="roadmap-list">
+          <li>
+            <span>Q2 2026</span>
+            <p>Políticas automáticas de respaldos por repositorio y frecuencia configurable.</p>
+          </li>
+          <li>
+            <span>Q3 2026</span>
+            <p>Asistente de restauración con validación previa para evitar sobrescrituras involuntarias.</p>
+          </li>
+          <li>
+            <span>Q4 2026</span>
+            <p>Sincronización segura de respaldos entre equipos para continuidad operativa distribuida.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="faq container reveal" id="faq">
+        <div class="section-head">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Lo esencial sobre respaldos en Git</h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>¿Stash Guardian reemplaza Git?</summary>
+            <p>
+              No. Stash Guardian complementa Git creando respaldos restaurables para recuperar el proyecto
+              cuando hay pérdida de información o errores difíciles de revertir.
+            </p>
+          </details>
+          <details>
+            <summary>¿Qué pasa si pierdo cambios importantes en mi repositorio?</summary>
+            <p>
+              Puedes restaurar uno de los respaldos generados por Stash Guardian y volver a un estado previo
+              estable sin reconstruir manualmente todo el trabajo.
+            </p>
+          </details>
+          <details>
+            <summary>¿Puedo usarlo con cualquier flujo de trabajo en Git?</summary>
+            <p>
+              Sí. Puedes integrarlo en flujos con ramas, merges y rebases para contar siempre con puntos
+              de recuperación adicionales.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Stash Guardian · Respaldo y restauración de proyectos ante pérdida en Git.</p>
+        <p>© <span id="year"></span> Stash Guardian. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
