@@ -2,21 +2,23 @@ const builds = [
   {
     os: "macos",
     label: "macOS (Apple Silicon)",
-    version: "0.5.0",
+    version: "0.5.2",
+    date: "2026-03-29",
     status: "beta",
     size: "142.4 MB",
     checksum: "8be2...9e13",
-    downloadUrl: "https://www.dropbox.com/scl/fi/ztryxa3n1kdrnedq8xpyv/Stash-Guardian-0.5.0-arm64.dmg?rlkey=3iobsqsdipro70us8gzzexk7o&st=9hx9z0k1&dl=0",
+    downloadUrl: "https://www.dropbox.com/scl/fi/q8vtp4mxa6twypdaz754v/Stash-Guardian-0.5.2-arm64.dmg?rlkey=0vj18qie4g6merh0xipqlhmvq&st=21r9wwyq&dl=0",
     notesUrl: "#"
   },
   {
     os: "windows",
     label: "Windows 10+",
-    version: "0.5.0",
+    version: "0.5.2",
+    date: "2026-03-29",
     status: "beta",
     size: "119.6 MB",
     checksum: "f74a...12d8",
-    downloadUrl: "https://www.dropbox.com/scl/fi/q4ukmndb4jpx0uw5crp05/Stash-Guardian-0.5.0-setup.exe?rlkey=yrscq9gfsd449nob4hz4v8cbx&st=k8immivh&dl=0",
+    downloadUrl: "https://www.dropbox.com/scl/fi/m9nlkh68lstp6eokuo442/Stash-Guardian-0.5.2-setup.exe?rlkey=8ed3fhd76l31ia3d9060r5ggf&st=cghhyn4t&dl=0",
     notesUrl: "#"
   },
 //   {
@@ -47,10 +49,11 @@ function renderBuilds(osFilter) {
           <span class="badge ${build.status}">${build.status.toUpperCase()}</span>
         </div>
         <p class="build-meta">Versión: ${build.version} · Tamaño: ${build.size}</p>
+        <p class="build-meta">Publicado el: ${new Date(build.date).toLocaleDateString()}</p>
         <div class="build-actions">
-        <a class="btn-link primary" href="${build.downloadUrl}" download target="_blank" aria-label="Descargar build para ${build.label}">
-          Descargar
-        </a>
+          <a class="btn-link primary" href="${build.downloadUrl}" download target="_blank" aria-label="Descargar build para ${build.label}">
+            Descargar
+          </a>
         </div>
         </article>
     `
