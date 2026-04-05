@@ -2,23 +2,23 @@ const builds = [
   {
     os: "macos",
     label: "macOS (Apple Silicon)",
-    version: "0.5.2",
-    date: "2026-03-29",
+    version: "0.5.4",
+    date: "2026/04/05",
     status: "beta",
-    size: "142.4 MB",
+    size: "135.82 MB",
     checksum: "8be2...9e13",
-    downloadUrl: "https://www.dropbox.com/scl/fi/q8vtp4mxa6twypdaz754v/Stash-Guardian-0.5.2-arm64.dmg?rlkey=0vj18qie4g6merh0xipqlhmvq&st=21r9wwyq&dl=0",
+    downloadUrl: "https://www.dropbox.com/scl/fi/a170bno671ciurb2t8fta/Stash-Guardian-0.5.4-arm64.dmg?rlkey=yi93lpafovykhtw26c824uuc6&st=kj87xldc&dl=0",
     notesUrl: "#"
   },
   {
     os: "windows",
     label: "Windows 10+",
-    version: "0.5.2",
-    date: "2026-03-29",
+    version: "0.5.4",
+    date: "2026/04/05",
     status: "beta",
-    size: "119.6 MB",
+    size: "114.09 MB",
     checksum: "f74a...12d8",
-    downloadUrl: "https://www.dropbox.com/scl/fi/m9nlkh68lstp6eokuo442/Stash-Guardian-0.5.2-setup.exe?rlkey=8ed3fhd76l31ia3d9060r5ggf&st=cghhyn4t&dl=0",
+    downloadUrl: "https://www.dropbox.com/scl/fi/hvlbayepbh2reqwl3489a/Stash-Guardian-0.5.4-setup.exe?rlkey=bb2z3mukbm63vl8spykfepimr&st=aacvoowx&dl=0",
     notesUrl: "#"
   },
 //   {
